@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/43e3db5ca4.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" class="myStyle">
+    <title>Thom's Coffee</title>
+</head>
+<body>
+    
+
+    <div class="homePage">
+        <div class="homePageNavbar">
+            <h1 id="welcome">Welcome too Thom's Coffee</h1>
+        </div>
+        <img class="fr" src="images/fr.jpg">
+        <button id="orderBtn">Order Now</button>
+        <img class="fr2" src="images/fr2.jpg">
+        <hr>
+        <div class="rates">
+            <img src="images/rate1.jpg">
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-regular fa-star"></i>
+            </div>
+            <img src="images/rate2.jpeg">
+            <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+            </div>
+        </div>
+        <hr>
+        <div class="followCont">
+            <h1>Follow us:</h1>
+            <div class="follow">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+    </div>
+    
+    <div class="orderedPage" style="display: none">
+        <div class="navbar"></div>
+        <h1 class="thank">Thank you for ordering coffee from my website! I am thrilled to have you as my valued customer. Your caffeine fix is on its way!</h1>
+        <button id="orderAgainBtn">Order Again</button>
+    </div>
+    
+    <div class="frontPage" style="display: none">
+        <div class="navbar">
+            <i id="menuBar" class="fa-solid fa-bars"></i>
+            <i id="cart" class="fa-solid fa-cart-shopping"></i>
+            <p class="cartTotal"></p>
+            <div class="LogoBox"><h2 class="thom">THOM'S</h2></div>
+            <div class="lineTop"></div>
+            <h2 class="coffee">COFFEE</h2>
+            <div class="lineBot"></div>
+        </div>
+        
+        
+        <div class="menu" style="transform: translateX(-140px)">
+            <ul>
+                <li id="home">HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </div>
+        
+        
+        <div class="products">
+            <div class="cart" style="display: none">
+                <div class="tableHeader">
+                    <div class="item">Item</div>
+                    <div class="num">Qty</div>
+                    <div class="num">Total</div>
+                </div>
+                <div class="empty">No item</div>
+            </div>
+            <div class="productContainer">
+                <h3>AMERICANO</h3>
+                <img src="images/coffee/Americano.png">
+                <h4>₱130</h4>
+                <i id="americanoP" class="fa-solid fa-plus"></i><p id="americanoQ"></p><i id="americanoM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>WHITE MOCHA</h3>
+                <img src="images/coffee/WhiteMocha.png">
+                <h4>₱130</h4>
+                <i id="whiteMochaP" class="fa-solid fa-plus"></i><p id="whiteMochaQ"></p><i id="whiteMochaM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>LATTE</h3>
+                <img src="images/coffee/Latte.png">
+                <h4>₱145</h4>
+                <i id="latteP" class="fa-solid fa-plus"></i><p id="latteQ"></p><i id="latteM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>DARK MOCHA</h3>
+                <img src="images/coffee/DarkMocha.png">
+                <h4>₱140</h4>
+                <i id="darkMochaP" class="fa-solid fa-plus"></i><p id="darkMochaQ"></p><i id="darkMochaM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>CARAMEL</h3>
+                <img src="images/coffee/Caramel.png">
+                <h4>₱160</h4>
+                <i id="caramelP" class="fa-solid fa-plus"></i><p id="caramelQ"></p><i id="caramelM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>KAPE KASTILLA</h3>
+                <img src="images/coffee/KapeKastilla.png">
+                <h4>₱175</h4>
+                <i id="kapeKastillaP" class="fa-solid fa-plus"></i><p id="kapeKastillaQ"></p><i id="kapeKastillaM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>KAPE MESTIZO</h3>
+                <img src="images/coffee/KapeMestizo.png">
+                <h4>₱170</h4>
+                <i id="kapeMestizoP" class="fa-solid fa-plus"></i><p id="kapeMestizoQ"></p><i id="kapeMestizoM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>DIRTY CHAI</h3>
+                <img src="images/coffee/DirtyChai.png">
+                <h4>₱130</h4>
+                <i id="dirtyChaiP" class="fa-solid fa-plus"></i><p id="dirtyChaiQ"></p><i id="dirtyChaiM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>CAPPUCCINO</h3>
+                <img src="images/coffee/Cappuccino.png">
+                <h4>₱155</h4>
+                <i id="cappuccinoP" class="fa-solid fa-plus"></i><p id="cappuccinoQ"></p><i id="cappuccinoM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>FLAT WHITE</h3>
+                <img src="images/coffee/FlatWhite.png">
+                <h4>₱140</h4>
+                <i id="flatWhiteP" class="fa-solid fa-plus"></i><p id="flatWhiteQ"></p><i id="flatWhiteM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>MATCHA LATTE</h3>
+                <img src="images/coffee/Matcha.png">
+                <h4>₱155</h4>
+                <i id="matchaLatteP" class="fa-solid fa-plus"></i><p id="matchaLatteQ"></p><i id="matchaLatteM" class="fa-solid fa-minus"></i>
+            </div>
+            <div class="productContainer">
+                <h3>CHOCOLATE</h3>
+                <img src="images/coffee/Chocolate.png">
+                <h4>₱145</h4>
+                <i id="chocolateP" class="fa-solid fa-plus"></i><p id="chocolateQ"></p><i id="chocolateM" class="fa-solid fa-minus"></i>
+            </div>
+        </div>
+    </div>
+
+    
+    
+    <script class="myScript" src="script.js"></script>
+</body>
+</html>
